@@ -9,6 +9,8 @@ WORKDIR /app
 # Copy everything
 COPY . .
 
+RUN chmod +x start.sh
+
 # Install Python packages
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
