@@ -68,7 +68,7 @@ def generate_intents(request: GenerationRequest):
             tone=request.mode,
             count=request.intentCount,
             api_key=GROQ_API_KEY,
-            domain=request.domain
+            topic=request.domain
         )
 
         if not result:
